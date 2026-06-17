@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 
 let shapes = [];
 
-// Resize canvas perfectly to fit window
+// Track the visible viewport bounds dynamically
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -11,26 +11,25 @@ function resizeCanvas() {
 window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
 
-// Shape Blueprint Class
 class GeometricShape {
     constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 8 + 4; 
-        this.speedX = (Math.random() - 0.5) * 0.4; // Soft slow movement
-        this.speedY = (Math.random() - 0.5) * 0.4;
-        this.type = Math.floor(Math.random() * 3); // 0=Dot, 1=Square Outline, 2=Triangle Outline
+        this.speedX = (Math.random() - 0.5) * 0.3; // Very gentle drifting speed
+        this.speedY = (Math.random() - 0.5) * 0.3;
+        this.type = Math.floor(Math.random() * 3); 
         this.color = this.getRandomColor();
         this.angle = Math.random() * Math.PI * 2;
-        this.spin = (Math.random() - 0.5) * 0.01;
+        this.spin = (Math.random() - 0.5) * 0.005;
     }
 
     getRandomColor() {
         const colors = [
-            'rgba(165, 201, 235, 0.4)',  // Soft Blue
-            'rgba(226, 240, 217, 0.5)',  // Soft Green
-            'rgba(240, 225, 247, 0.5)',  // Soft Purple
-            'rgba(251, 234, 219, 0.5)'   // Soft Orange
+            'rgba(165, 201, 235, 0.35)', 
+            'rgba(226, 240, 217, 0.45)', 
+            'rgba(240, 225, 247, 0.45)', 
+            'rgba(251, 234, 219, 0.45)'  
         ];
         return colors[Math.floor(Math.random() * colors.length)];
     }
@@ -40,7 +39,7 @@ class GeometricShape {
         this.y += this.speedY;
         this.angle += this.spin;
 
-        // Screen wrap-around behavior
+        // Wrap around bounds cleanly matching viewport size
         if (this.x < -20) this.x = canvas.width + 20;
         if (this.x > canvas.width + 20) this.x = -20;
         if (this.y < -20) this.y = canvas.height + 20;
@@ -53,18 +52,15 @@ class GeometricShape {
         ctx.rotate(this.angle);
         ctx.strokeStyle = this.color;
         ctx.fillStyle = this.color;
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 1.5;
 
         if (this.type === 0) {
-            // Animated Dot
             ctx.beginPath();
             ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);
             ctx.fill();
         } else if (this.type === 1) {
-            // Square Outline
             ctx.strokeRect(-this.size / 2, -this.size / 2, this.size, this.size);
         } else if (this.type === 2) {
-            // Triangle Outline
             ctx.beginPath();
             ctx.moveTo(0, -this.size / 2);
             ctx.lineTo(this.size / 2, this.size / 2);
@@ -76,16 +72,15 @@ class GeometricShape {
     }
 }
 
-// Populate the canvas with elements
 function init() {
     shapes = [];
-    const initialDensity = Math.floor((canvas.width * canvas.height) / 25000); // Scale based on screen size
+    // Adjust density to look crisp on both giant desktop setups and standard mobile widths
+    const initialDensity = Math.min(Math.floor((canvas.width * canvas.height) / 22000), 60);
     for (let i = 0; i < initialDensity; i++) {
         shapes.push(new GeometricShape());
     }
 }
 
-// Continuous Animation Loop
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     shapes.forEach(shape => {
@@ -94,6 +89,11 @@ function animate() {
     });
     requestAnimationFrame(animate);
 }
+
+// Re-initialize array size dynamically if the window scales dramatically
+window.addEventListener('resize', () => {
+    init();
+});
 
 init();
 animate();
