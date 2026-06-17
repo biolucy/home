@@ -1,0 +1,136 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(240,247,255,1) 70%, rgba(228,240,255,1) 100%);
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+}
+
+/* Background Canvas Layout */
+#bgCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Content Container */
+.profile-container {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Avatar Styling */
+.avatar-wrapper {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px dashed rgba(165, 201, 235, 0.6);
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Typography Styling */
+.bio-text {
+    font-size: 1.85rem;
+    line-height: 1.5;
+    color: #4a6b82; /* Muted slate blue color */
+    font-weight: 400;
+}
+
+.highlight-dark {
+    color: #0d2c47; /* Dark navy text weight */
+    font-weight: 700;
+}
+
+.italic-dark {
+    color: #0d2c47;
+    font-style: italic;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Button Layout & Styling */
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Exact Palette Button Themes */
+.btn-linkedin {
+    background-color: #e2f0d9;
+    color: #557a46;
+}
+
+.btn-bluesky {
+    background-color: #e1f0fa;
+    color: #43769c;
+}
+
+.btn-github {
+    background-color: #24292e;
+    color: #ffffff;
+}
+
+.btn-email {
+    background-color: #fbeadb;
+    color: #9c6c43;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .bio-text {
+        font-size: 1.4rem;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
