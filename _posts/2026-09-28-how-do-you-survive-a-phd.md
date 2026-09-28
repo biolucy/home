@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: post
 title: "How do you survive a PhD?"
+date: 2026-09-28
 description: "Things I wish I'd known about surviving and enjoying a PhD."
-author: Lucy Evans
-date: 2026-09-01
 permalink: /phd-survival-guide/
 ---
 
@@ -36,18 +35,18 @@ permalink: /phd-survival-guide/
 - Use a reference manager like Zotero or EndNote
 - Keep your samples, files and notes well-organised. For example, start files with the date so you can sort them easily. There is nothing worse than needing one specific thing and not being able to find it anywhere
 - Make detailed and clear notes. Future you will thank you
-- Make regular backups of your data. You don't want to lose stuff because of an errant water bottle or computer crash
+- Make regular backups of your data. You don't want to lose stuff because of an errant water bottle or computer crash/ It's important to use university cloud servers i.e. OneDrive due to data protection.
 
 ### Working
 
 - Avoid scope creep. Your project will be able to go in so many directions, so it's important to pick one and focus in
 - Write consistently in small amounts, especially methods etc. It will help you a lot later
 - Be considerate of your colleagues. Aim to make their lives easier, not harder
-- Stay on top of your reading in your field. LinkedIn and Bluesky can help, as can following relevant journals
+- Stay on top of your reading in your field. LinkedIn and Bluesky can help, as can following relevant journals. [PubCrawler](https://pubcrawler.gen.tcd.ie/about.html) is another good tool to help keep on top of papers.
 - If you want to do something, do it well. There is no point in doing an experiment and cutting corners if that means you'll have to repeat it later
 
 
-## Community
+### Community
 
 - Be curious about the science around you, even if it's not directly relevant to your work
 - Attend your department seminars and talks. They're super helpful for broadening your knowledge and for networking
@@ -56,7 +55,7 @@ permalink: /phd-survival-guide/
 - Don't be afraid to say hello to people, even if they're a super-famous big scientist. They were once in your shoes, after all
 
 
-## Personal Life
+### Personal Life
 
 - Have hobbies outside of the lab, something to live for beyond your work 🙂
 - Use your holiday. I will say it again: don't burn out. Science will be there when you get back. You are more important. The same goes for taking sick days
@@ -67,6 +66,5 @@ permalink: /phd-survival-guide/
 
 ## Have Fun!
 
-<div class="callout">
-You wouldn't be here if people didn't think you could succeed.
-</div>
+**Remember, your PhD is a marathon, not a sprint. You wouldn't be here if people didn't think you could succeed.**
+
