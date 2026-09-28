@@ -11,16 +11,16 @@
   <meta name="description" content="{{ page.description | escape }}">
   {% endif %}
 
-  {{ '/image01.jpg' | relative_url }}
+  /image01.jpg
+  /assets/css/article.css
+</head>
 
-  <link
-    rel="stylesheet"
-    href="{{ '/assets/css/articley>
+<body>
 
   <main class="article-wrapper">
 
     <nav class="article-nav">
-      {{ '/' | relative_url }}
+      /
         <span aria-hidden="true">←</span>
         Lucy Evans
       </a>
@@ -57,14 +57,9 @@
       </div>
 
       <footer class="article-footer">
-
         <p>
-          Notes from
-          {{ '/' | relative_url }}
-            {{ site.author.name }}
-          </a>.
+          Notes from /{{ site.author.name }}</a>.
         </p>
-
       </footer>
 
     </article>
