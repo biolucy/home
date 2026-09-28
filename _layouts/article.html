@@ -3,30 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>{{ page.title }} | {{ site.title }}</title>
 
   {% if page.description %}
-    <meta
-      name="description"
-      content="{{ page.description | escape }}"
-    >
-  {% else %}
-    <meta
-      name="description"
-      content="{{ site.description | escape }}"
-    >
+  <meta name="description" content="{{ page.description | escape }}">
   {% endif %}
 
   {{ '/image01.jpg' | relative_url }}
 
-  {{ '/assets/css/article.css' | relative_url }}
-</head>
-
-<body>
-
-  <main class="article-wrapper">
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/article.css' | relative_url }}cle-wrapper">
 
     <nav class="article-nav">
       {{ '/' | relative_url }}
@@ -51,6 +40,7 @@
 
           {% if page.date %}
             <span class="separator">·</span>
+
             <time datetime="{{ page.date | date_to_xmlschema }}">
               {{ page.date | date: "%B %Y" }}
             </time>
@@ -60,9 +50,11 @@
 
       </header>
 
+
       <div class="article-content">
         {{ content }}
       </div>
+
 
       <footer class="article-footer">
         <p>
@@ -78,4 +70,5 @@
   </main>
 
 </body>
+
 </html>
