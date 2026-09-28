@@ -4,7 +4,7 @@ title: "How do you survive a PhD?"
 description: "Things I wish I'd known about surviving and enjoying a PhD."
 author: Lucy Evans
 date: 2026-09-01
-permalink: /phd-survival/
+permalink: /phd-survival-guide/
 ---
 
 ## Non-Negotiables
