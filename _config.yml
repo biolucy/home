@@ -1,0 +1,17 @@
+title: Lucy Evans
+description: Microbiologist and PhD researcher
+
+url: "https://biolucy.co.uk"
+baseurl: ""
+
+author:
+  name: Lucy Evans
+
+markdown: kramdown
+
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
