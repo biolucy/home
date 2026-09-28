@@ -13,9 +13,12 @@
 
   {{ '/image01.jpg' | relative_url }}
 
-  <link
-    rel="stylesheet"
-    href="{{ '/assets/css/article.css' | relative_url }}cle-wrapper">
+  {{ '/assets/css/article.css' | relative_url }}
+</head>
+
+<body>
+
+  <main class="article-wrapper">
 
     <nav class="article-nav">
       {{ '/' | relative_url }}
@@ -50,11 +53,9 @@
 
       </header>
 
-
       <div class="article-content">
         {{ content }}
       </div>
-
 
       <footer class="article-footer">
         <p>
