@@ -116,7 +116,7 @@ body {
 .btn-bluesky { background-color: #e1f0fa; color: #43769c; }
 .btn-instagram { background-color: #f0e1f7; color: #7b5294; }
 .btn-email { background-color: #fbeadb; color: #9c6c43; }
-.btn-guide { background-color: #dfe9d6; color: #3d5c42; }
+
 
 /* Clean Mobile Stack fallback rules */
 @media (max-width: 480px) {
@@ -142,4 +142,16 @@ body {
 .btn-github {
     background-color: #e6e9ed;
     color: #24292e;
+}
+
+.featured-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+.btn-guide {
+    background-color: #e7ede5;
+    color: #3d5c42;
+    border: 2px solid #3d5c42;
 }
