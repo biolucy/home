@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    {{ page.title }} | {{ site.title }}
+  </title>
+
+  {% if page.description %}
+  <meta
+    name="description"
+    content="{{ page.description | escape }}"
+  >
+  {% else %}
+  <meta
+    name="description"
+    content="{{ site.description | escape }}"
+  >
+  {% endif %}
+
+  {{ '/image01.jpg' | relative_url }}
+
+  {{ '/assets/css/article.css' | relative_url }}
+</head>
+
+
+<body>
+
+  <main class="article-wrapper">
+
+    <nav class="article-nav">
+      {{ '/' | relative_url }}
+        <span aria-hidden="true">←</span>
+        Lucy Evans
+      </a>
+    </nav>
+
+
+    <article>
+
+      <header class="article-header">
+
+        <h1>{{ page.title }}</h1>
+
+        <div class="byline">
+
+          {% if page.author %}
+            {{ page.author }}
+          {% else %}
+            {{ site.author.name }}
+          {% endif %}
+
+          {% if page.date %}
+            <span class="separator">·</span>
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+              {{ page.date | date: "%B %Y" }}
+            </time>
+          {% endif %}
+
+        </div>
+
+      </header>
+
+
+      <div class="article-content">
+        {{ content }}
+      </div>
+
+
+      <footer class="article-footer">
+
+        <p>
+          Notes from
+          {{ '/' | relative_url }}
+            {{ site.author.name }}
+          </a>.
+        </p>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+</body>
+
+</html>
