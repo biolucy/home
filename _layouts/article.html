@@ -13,10 +13,9 @@
 
   {{ '/image01.jpg' | relative_url }}
 
-  {{ '/assets/css/article.css' | relative_url }}
-</head>
-
-<body>
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/articley>
 
   <main class="article-wrapper">
 
@@ -58,12 +57,14 @@
       </div>
 
       <footer class="article-footer">
+
         <p>
           Notes from
           {{ '/' | relative_url }}
             {{ site.author.name }}
           </a>.
         </p>
+
       </footer>
 
     </article>
