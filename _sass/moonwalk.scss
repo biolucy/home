@@ -364,10 +364,10 @@ div.highlighter-rouge:hover .code-copy {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: fit-content;
+  height: 40px; padding: 0 16px; gap: 7px;
   margin-bottom: 1.5em;
-  border-radius: 50%;
+  border-radius: 22px;
   border: 1px solid var(--border);
   background: #e1f0fa;
   color: #43769c;
@@ -375,8 +375,8 @@ div.highlighter-rouge:hover .code-copy {
   transition: color 0.3s ease;
   &:hover { color: #0d2c47; }
   @media screen and (max-width: 600px) {
-    width: 36px;
-    height: 36px;
+    width: fit-content;
+    height: 38px;
   }
 }
 
