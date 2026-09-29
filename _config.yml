@@ -1,15 +1,18 @@
 # Site
 title: Lucy Evans
+tagline: "PhD researcher in bacteriophage microbiology and antimicrobial resistance."
 bio: "PhD researcher in bacteriophage microbiology and antimicrobial resistance."
 description: "Lucy Evans - microbiology, bacteriophages, antimicrobial resistance and PhD life."
+theme: monophase
 
 reading_time: true
 words_per_minute: 200
 
-# Moonrise appearance
-logo: "assets/img/logo.png"
-background: "assets/img/moonrise-background.jpg"
-tiled_bg: false
+# Monophase
+lang: en-GB
+author:
+  name: Lucy Evans
+tags_path: /tags/
 
 locale: en_GB
 url: https://biolucy.co.uk
