@@ -1,0 +1,12 @@
+- title: Email
+  url: mailto:lre494@student.bham.ac.uk
+  icon: fas fa-envelope
+- title: LinkedIn
+  url: https://www.linkedin.com/in/lucyrevans/
+  icon: fab fa-linkedin
+- title: Bluesky
+  url: https://bsky.app/profile/biolucy.bsky.social
+  icon: fas fa-cloud
+- title: GitHub
+  url: https://github.com/biolucy
+  icon: fab fa-github
