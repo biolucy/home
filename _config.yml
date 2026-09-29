@@ -1,62 +1,34 @@
 # Site
-title: Lucy Evans
-bio: "PhD researcher in bacteriophage microbiology and antimicrobial resistance."
-description: "Lucy Evans - microbiology, bacteriophages, antimicrobial resistance and PhD life."
+title: "Lucy Evans"
+author: "Lucy Evans"
+description: "PhD researcher in bacteriophage microbiology and antimicrobial resistance."
 
-reading_time: true
-words_per_minute: 200
+url: "https://biolucy.co.uk"
+baseurl: ""
+locale: "en_GB"
 
-# Moonrise appearance
-logo: "assets/img/logo.png"
-background: "assets/img/moonrise-background.jpg"
-tiled_bg: false
-
-locale: en_GB
-url: https://biolucy.co.uk
-
-
-# Jekyll
+# URLs
 permalink: /:title/
 
+# Markdown
 markdown: kramdown
 highlighter: rouge
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+# Moonwalk
+theme_config:
+  appearance: "light"
+  appearance_toggle: false
 
-mathjax: true
-
+# Sass
 sass:
   sass_dir: _sass
   style: compressed
 
-
-# Social
-email: lre494@student.bham.ac.uk
-github-url: biolucy
-linkedin: lucyrevans
-
-# Add Bluesky manually later if wanted, as Moonrise does not
-# appear to have a built-in Bluesky setting in this config.
-
-
 # Plugins
 plugins:
-  - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-include-cache
-
-jekyll-mentions:
-  base_url: https://github.com
-
 
 # Exclude from generated site
 exclude:
@@ -66,10 +38,7 @@ exclude:
   - Gemfile.before-moonrise
   - _config.before-moonrise.yml
   - node_modules
-  - gulpfile.js
-  - package.json
-  - _site
-  - src
   - vendor
+  - _site
   - LICENSE
   - Rakefile
