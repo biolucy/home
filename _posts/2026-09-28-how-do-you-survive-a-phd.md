@@ -68,9 +68,9 @@ permalink: /phd-survival-guide/
 - [Zotero](https://www.zotero.org/)- Open-source reference/paper manager, has good integrations with Word or LaTeX, browser connectors etc.
 - [Connected Papers](https://www.connectedpapers.com/)- Visualises papers similar to ones you've given it, good for finding gaps or new papers/
 - [Obsidian](https://obsidian.md/)- Open-source notes software, can be synced to phone, very customisable (and used by many PhD students)
-- [https://www.canva.com/en_gb/](Canva)- Great for making diagrams/posters (UoB has free student pro membership)
-- [https://bioart.niaid.nih.gov/](BioArt)- 2,000+ free science and medical art visuals
-- [https://www.affinity.studio/](Affinity)- Another great graphic design software (also owned by Canva and free)
+- [Canva](https://www.canva.com/en_gb/)- Great for making diagrams/posters (UoB has free student pro membership)
+- [BioArt](https://bioart.niaid.nih.gov/)- 2,000+ free science and medical art visuals
+- [Affinity](https://www.affinity.studio/)- Another great graphic design software (also owned by Canva and free)
 
 ## Have Fun!
 
