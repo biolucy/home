@@ -21,8 +21,8 @@ main li a:hover {
 }
 
 /* External link indicator */
-main p a[href^="http"\]::after,
-main li a[href^="http"\]::after {
+main p a[href^="http"]::after,
+main li a[href^="http"]::after {
   content: " ↗";
   font-size: 0.8em;
   vertical-align: 0.1em;
