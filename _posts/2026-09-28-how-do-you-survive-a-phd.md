@@ -71,6 +71,7 @@ permalink: /phd-survival-guide/
 - [Canva](https://www.canva.com/en_gb/)- Great for making diagrams/posters (UoB has free student pro membership)
 - [BioArt](https://bioart.niaid.nih.gov/)- 2,000+ free science and medical art visuals
 - [Affinity](https://www.affinity.studio/)- Another great graphic design software (also owned by Canva and free)
+- [Benchling](https://www.benchling.com/)- SnapGene alternative, primer design/DNA and protein sequence stuff
 
 ## Have Fun!
 
