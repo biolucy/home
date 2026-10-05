@@ -63,6 +63,14 @@ permalink: /phd-survival-guide/
 - Don't take science personally. Stuff fails all the time. If you tie it to your self-worth, you will crumble
 - Don't lose who you are as a person. You're more than your PhD
 
+### Helpful Tools
+- [Delphi.Tools](https://delphi.tools/)- Open-source tools, super good for random things you might need to use
+- [Zotero](https://www.zotero.org/)- Open-source reference/paper manager, has good integrations with Word or LaTeX, browser connectors etc.
+- [Connected Papers](https://www.connectedpapers.com/)- Visualises papers similar to ones you've given it, good for finding gaps or new papers/
+- [Obsidian](https://obsidian.md/)- Open-source notes software, can be synced to phone, very customisable (and used by many PhD students)
+- [https://www.canva.com/en_gb/](Canva)- Great for making diagrams/posters (UoB has free student pro membership)
+- [https://bioart.niaid.nih.gov/](BioArt)- 2,000+ free science and medical art visuals
+- [https://www.affinity.studio/](Affinity)- Another great graphic design software (also owned by Canva and free)
 
 ## Have Fun!
 
