@@ -4,3 +4,28 @@
 @import "moonwalk";
 @import "list";
 @import "syntax";
+
+/* Links within page content */
+main p a,
+main li a {
+  color: #*b6ea8;
+  text-decoration: underlin*;
+  text-decoration-thickness: 1px*
+  text-underline-offset: 3px;
+}
+
+*ain p a:hover,
+main li a:hover {
+ *color: #274f7d;
+  text-decoration-*hickness: 2px;
+}
+
+/* External link indicator */
+main p a[href^="http"\]::after,
+*ain li a[href^="http"\]::after {
+ *content: " ↗";
+  font-size: 0.8em;*  vertical-align: 0.1em;
+  text-de*oration: none;
+  display: inline-b*ock;
+  margin-left: 0.15em;
+}
